@@ -25,6 +25,58 @@ body {
 	transition: none;
 }
 
+.background_image {
+	/* This fixes the background image to the page  */
+	position: fixed;
+	/* This ensures no space between the edge of the background image and the edge of the page */
+	bottom: 0;
+	/*Adding width and height and keeping the min-width allows the background image to not be so zoomed in.*/
+	width: 1000px;
+	height: 800px;
+	min-width: 100%;
+	top: 0;
+	/* This ensures the background image is displayed across the full width of the page */
+	z-index: -1;
+	animation: zoominoutsinglefeatured 5s;
+}
+
+/* This causes the background image to zoom out from a zoomed in position upon page load */
+@keyframes zoominoutsinglefeatured {
+	0% {
+		transform: scale(1.5, 1.5);
+	}
+
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+/* Text over the background image */
+.background_image_text {
+	background: rgba(0, 0, 0, 0.5);
+	/* This provides a semi-transparent background for the text to sit over */
+	color: white;
+	width: 100%;
+	/* This adds padding around the text so that the background goes slightly beyond the text */
+	padding-top: .1vh;
+	padding-bottom: .1vh;
+	margin-top: 23%;
+	position: relative;
+	-webkit-animation: movebgimageText 1.5s;
+	animation: movebgimageText 1.5s;
+}
+
+/* This animation effect causes the overlay background image text to move up from the bottom of the page upon page load */
+@keyframes movebgimageText {
+	from {
+		top: -100vw;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+
 /* Navbar */
 .Navbar {
 	/* This ensures that any content that overflows beyond the boundary of the nav bar is not displayed */
@@ -102,64 +154,10 @@ body {
 	transition-duration: .2s;
 }
 
-/* Background Image */
-#background_image {
-	/* This fixes the background image to the page  */
-	position: fixed;
-	/* This ensures no space between the edge of the background image and the edge of the page */
-	bottom: 0;
-	/*Adding width and height and keeping the min-width allows the background image to not be so zoomed in.*/
-	width: 1000px;
-	height: 800px;
-	min-width: 100%;
-	top: 0;
-	/* This ensures the background image is displayed across the full width of the page */
-	z-index: -1;
-	animation: zoominoutsinglefeatured 5s;
-}
-
-/* This causes the background image to zoom out from a zoomed in position upon page load */
-@keyframes zoominoutsinglefeatured {
-	0% {
-		transform: scale(1.5, 1.5);
-	}
-
-	100% {
-		transform: scale(1, 1);
-	}
-}
-
-/* Text over the background image */
-.background_image_text {
-	background: rgba(0, 0, 0, 0.5);
-	/* This provides a semi-transparent background for the text to sit over */
-	color: white;
-	width: 100%;
-	/* This adds padding around the text so that the background goes slightly beyond the text */
-	padding-top: .1vh;
-	padding-bottom: .1vh;
-	margin-top: 23%;
-	position: relative;
-	-webkit-animation: movebgimageText 1.5s;
-	animation: movebgimageText 1.5s;
-}
-
-/* This animation effect causes the overlay background image text to move up from the bottom of the page upon page load */
-@keyframes movebgimageText {
-	from {
-		top: -100vw;
-	}
-
-	to {
-		top: 0px;
-	}
-}
-
 /* Slideshow Styling */
 #Slideshow_Background {
 	background:rgba(255, 255, 255, 0.35);
 	}
-  
   
   .mySlides {
 	  display: none;
@@ -277,105 +275,9 @@ body {
 	animation-duration: 1.5s;  
   }
 
-/* Table - this section covers the styling of the columns and rows within the table */
-* {
-	/* The asterisk is a universal selector that applies this effect to all elements on the page */
-	/* This creates a box with a border within which we will place text */
-	box-sizing: border-box;
-}
+  
 
-.Column_1 {
-	float: left;
-	/* This ensures one column takes up half the page width */
-	width: 50%;
-	padding: 1.6%;
-	/* This sets the height of the column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
-	height: 400px;
-	background-color: #f2f2f2;
-}
-
-.Column_2 {
-	float: left;
-	width: 50%;
-	padding: 1.6%;
-	height: 400px;
-	background-color: rgb(25, 65, 61);
-}
-
-/* This inserts something after the content of selected elements */
-.Row:after {
-	/* By leaving this blank, its allowing the footer to be displayed - removing it makes the footer overwrite a column */
-	content: "";
-	/* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
-	display: table;
-	/* This clears any other elements from floating on the left or the right of an element */
-	clear: both;
-}
-
-/* Heading 1 elements */
-h1, h2 {
-	font-family: Verdana, Geneva, Tahoma;
-	text-align: center;
-	/* Small margin above the headings */
-	margin-top: 3%;
-	color: #1a1a1a;
-}
-
-/* Paragraph elements */
-p {
-	font-family: Verdana bold;
-	text-align: center;
-	letter-spacing: 0px;
-	/* This expands the text slightly */
-	font-size: 1.5vw;
-	padding-left: 1vw;
-	padding-right: 1vw;
-}
-
-/* Center align elements - this embraces all centered text */
-center {
-	font-family: Georgia Bold;
-	text-align: center;
-	letter-spacing: 0px;
-	font-size: 1.5vw;
-	padding-left: 5vw;
-	padding-right: 5vw;
-}
-
-/* Anchor elements */
-a {
-	/* All links are blue */
-	color: blue;
-}
-
-/* Quotation elements */
-q {
-	font-style: italic;
-	font-weight: bold;
-}
-
-
-/* Image elements */
-.image_effects {
-	/* This rids the pictures of 75% of their color */
-	filter: grayscale(75%);
-	border-radius: 8px;
-	max-width: 100%;
-	height: 100%;
-	margin: auto auto auto auto;
-	/* By specifying block display ensures images are able to be centered */
-	display: block;
-}
-
-/* Image hover effects */
-.image_effects:hover {
-	/* Brings back most of the image color when hovered over */
-	filter: grayscale(5%);
-	transition: transform 1s;
-	transform: scale(1.1);
-}
-
-/* Contact form styling */
+  /* Contact form styling */
 /* Button used to open the contact form - fixed at the bottom of the page */
 .pop_up_button {
 	bottom: 1.75vw;
@@ -478,10 +380,56 @@ button:hover,
 	border-color: black;
 }
 
+/* Heading 1 elements */
+h1, h2 {
+	font-family: Verdana, Geneva, Tahoma;
+	text-align: center;
+	/* Small margin above the headings */
+	margin-top: 3%;
+	color: #1a1a1a;
+}
+
+/* Paragraph elements */
+p {
+	font-family: Verdana bold;
+	text-align: center;
+	letter-spacing: 0px;
+	/* This expands the text slightly */
+	font-size: 1.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+/* Center align elements - this embraces all centered text */
+center {
+	font-family: Georgia Bold;
+	text-align: center;
+	letter-spacing: 0px;
+	font-size: 1.5vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+/* Anchor elements */
+a {
+	/* All links are blue */
+	color: blue;
+}
+
+/* Quotation elements */
+q {
+	font-style: italic;
+	font-weight: bold;
+}
+
 /* Footer */
 footer {
 	padding: 2%;
 	background-color: white;
 }
 
+.card-img-top {
+	width: auto;
+	height: auto;
+}
 
