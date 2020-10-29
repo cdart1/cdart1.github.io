@@ -37,7 +37,7 @@ html {
 }
 
 .navbar a:hover{
-	color:  rgb(35, 49, 243);
+	color:  royalblue;
 }
 
 .name {
@@ -48,6 +48,109 @@ html {
 	display: block;
   	margin-left: auto;
  	margin-right: auto;
+}
+
+/* Contact form */
+/* Button used to open the contact form - fixed at the bottom of the page */
+.pop_up_button {
+	bottom: 1.75vw;
+	right: 1.75vw;
+	width: 25vw;
+	background-color: white;
+	color: black;
+	border: solid;
+	cursor: pointer;
+	position: fixed;
+	-webkit-animation: movePopup 1.75s;
+	animation: movePopup 1.75s;
+}
+
+/* Makes contact form button slide in from right on page load */
+@keyframes movePopup {
+	from {
+		right: -40vw;
+	}
+
+	to {
+		bottom: 1.75vw;
+	}
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+	border: 3px solid #f0f1f0;
+	z-index: 8;
+	display: none;
+	position: fixed;
+	bottom: 6px;
+	right: 6px;
+}
+
+/* Form styling */
+.form-container {
+	min-width: 49vw;
+	padding: 9px;
+	background-color: white;
+}
+
+/* Input fields */
+.form-container input[type=text] {
+	width: 100%;
+	padding: .93vw;
+	margin: .6vw 0 .6vw 0;
+	background: Gainsboro;
+	font-family: Helvetica;
+	font-size: 1vw;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* Submit button */
+.form-container .btn {
+	background-color: white;
+	color: black;
+	border-color: black;
+	margin-bottom: 1vh;
+}
+
+/* Close button */
+.form-container .cancel {
+	background-color: black;
+	color: white;
+	border-color: gray;
+}
+
+/* Button styling */
+button {
+	font-family: "Trebuchet MS", Optima;
+	letter-spacing: .3vw;
+	font-size: 1.5vw;
+	font-weight: bold;
+	padding: 1.5vw 1.5vw;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	height: auto;
+}
+
+/* Hover effect for buttons */
+button:hover,
+.form-container .btn:hover {
+	color: white;
+	background-color: royalblue;
+	-webkit-transition-duration: .2s;
+	transition-duration: .2s;
+	border-style: solid;
+	border-color: silver;
+}
+
+.form-container .cancel:hover {
+	color: white;
+	background-color: darkred;
+	-webkit-transition-duration: .2s;
+	transition-duration: .2s;
+	border-style: solid;
+	border-color: black;
 }
 
 

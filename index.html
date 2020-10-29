@@ -17,7 +17,7 @@
     <title>Courtney Dart</title>
   </head>
   <body>
-	  <div class="scroll">
+	<div>
 		<div class="container-fluid">
 			<!-- Navbar -->
 			<nav class="navbar fixed-top navbar-expand-lg bg-dark">
@@ -29,116 +29,143 @@
 				<a class="navbar-brand" href="https://gist.github.com/cdart1/791bdac729636f817dae58da2b5ce055">Resume</a>
 			</nav>
 			<!-- End Navbar -->
-			<!-- Jumbotron Name -->
-			<div id="home">
-				<div id="background1">
-					<div class="jumbotron jumbotron-fluid bg-black mt-5 p-5">
-						<div class="card text-center">
-							<img class="headshot" src="./img/myHeadshot.jpg" srcset="" alt="Courtney's headshot">
-							<div class="card">
-								<div class="card-body">
-								  <h1 class="card-title">Courtney Dart</h1>
-								  <h3 class="card-text">Full-Stack Software Developer</h3>
-								  <hr>
-								  <p class="font-italic">I would like to be remembered as someone who was not afraid to do what she wanted to do,
-									<br>and as someone who took risks along the way in order to achieve her goals. - Sally Ride
-								</p>
+			<!-- Ability to click anywhere on the page to close the contact form -->
+			<div class="btn cancel" onclick="closeForm()">
+				<!-- Jumbotron Name -->
+				<div id="home">
+					<div id="background1">
+						<div class="jumbotron jumbotron-fluid bg-black mt-5 p-5">
+							<div class="card text-center">
+								<img class="headshot" src="./img/myHeadshot.jpg" srcset="" alt="Courtney's headshot">
+								<div class="card">
+									<div class="card-body">
+									<h1 class="card-title">Courtney Dart</h1>
+									<h3 class="card-text">Full-Stack Software Developer</h3>
+									<hr>
+									<p class="font-italic">I would like to be remembered as someone who was not afraid to do what she wanted to do,
+										<br>and as someone who took risks along the way in order to achieve her goals. - Sally Ride
+									</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- End Jumbotron Name -->
-			<br>
-			<br>
-			<!-- Jumbotron Portfolio -->
-			<div>
-				<div id="background2">
-					<div id="portfolio" class="jumbotron jumbotron-fluid bg-black mt-5 p-5">
-						<h1 class="row">Portfolio</h1>
-						<div class="card-group">
-							<div class="card">
-								<a href="https://gist.github.com/cdart1/fc7e250b40a5e1f6409512e97faaaf66"><img src="./img/reviews.png" class="card-img-top" alt="..."></a>
-								<div class="card-body">
-									<h5 class="card-title">AppBuilder9000</h5>
-									<p class="card-text">I created a web application using Python (Django) that allows users to create and maintain festival reviews. Scraped data using Beautiful Soup for users to look for upcoming festivals in Seattle, as well as displayed current weather across US cities based on user input which retrieved real-time data from API requests.</p>
-							  	</div>
-							</div>
-							<div class="card">
-								<a href="https://gist.github.com/cdart1/01e48d61210e9c24ef1583e9b57cb911"><img src="./img/theater.jpg" class="card-img-top" alt="..."></a>
-								<div class="card-body">
-									<h5 class="card-title">Theater Management App</h5>
-									<p class="card-text">I contributed to a C# (ASP.NET MVC) web application that facilitates and automates the ability for admin users to add, update, and search theater performances by implementing features that allow the creation of calendar events and filter productions on dropdown selections. I utilized Entity Framework Code First and SQL in the execution of this project.</p>
+				<!-- End Jumbotron Name -->
+				<br>
+				<br>
+				<!-- Jumbotron Portfolio -->
+				<div>
+					<div id="background2">
+						<div id="portfolio" class="jumbotron jumbotron-fluid bg-black mt-5 p-5">
+							<h1 class="row">Portfolio</h1>
+							<div class="card-group">
+								<div class="card">
+									<a href="https://gist.github.com/cdart1/fc7e250b40a5e1f6409512e97faaaf66"><img src="./img/reviews.png" class="card-img-top" alt="..."></a>
+									<div class="card-body">
+										<h5 class="card-title">AppBuilder9000</h5>
+										<p class="card-text">I created a web application using Python (Django) that allows users to create and maintain festival reviews. Scraped data using Beautiful Soup for users to look for upcoming festivals in Seattle, as well as displayed current weather across US cities based on user input which retrieved real-time data from API requests.</p>
+									</div>
 								</div>
-							</div>
-							<div class="card"></div>
-							<div class="card"></div>
-							<div class="card"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Jumbotron Portfolio -->
-			<br>
-			<br>
-			<!-- Jumbotron Skills -->
-			<div>
-				<div id="background3">
-					<div id="skills" class="jumbotron jumbotron-fluid bg-black mt-5 p-5">
-						<h1 class="row">Skills</h1>
-						<div class="card-group">
-							<div class="card">
-								<img src="./img/html-css2.jpg" class="card-img-top" alt="...">
-								<div class="card-body">
-									<h5 class="card-title">HTML & CSS</h5>
-									<p class="card-text">I have experienced using HTML and CSS features, as well as frameworks like Bootstrap to stylize websites. I appreciative the art of design used on the front-end.</p>
+								<div class="card">
+									<a href="https://gist.github.com/cdart1/01e48d61210e9c24ef1583e9b57cb911"><img src="./img/theater.jpg" class="card-img-top" alt="..."></a>
+									<div class="card-body">
+										<h5 class="card-title">Theater Management App</h5>
+										<p class="card-text">I contributed to a C# (ASP.NET MVC) web application that facilitates and automates the ability for admin users to add, update, and search theater performances by implementing features that allow the creation of calendar events and filter productions on dropdown selections. I utilized Entity Framework Code First and SQL in the execution of this project.</p>
+									</div>
 								</div>
-							</div>
-							<div class="card">
-								<img src="./img/js.jpg" class="card-img-top" alt="...">
-								<div class="card-body">
-									<h5 class="card-title">JavaScript</h5>
-									<p class="card-text">The more I work with JavaScript and jQuery, the more I see that it's a must know language. This OOP language is powerful for adding dynamic features to static pages.</p>
-								</div>
-							</div>
-							<div class="card">
-								<img src="./img/SQL_and_Database.jpg" class="card-img-top" alt="...">
-								<div class="card-body">
-									<h5 class="card-title">SQL</h5>
-									<p class="card-text">My experience using Microsoft TSQL taught me the importance of data collection and the power of data analyzation. I enjoyed designing a database schema and creating stored procedures.</p>
-								</div>
-							</div>
-							<div class="card">
-								<img src="./img/Python.png" class="card-img-top" alt="...">
-								<div class="card-body">
-									<h5 class="card-title">Python</h5>
-									<p class="card-text">Python has become one of my favorite languages. It was fun builting GUI's with Tkinter. As I learned more about modules and frameworks such as Django, I see why this language is so popular.</p>
-								</div>
-							</div>
-							<div class="card">
-								<img src="./img/C_Sharp_and_Dot_NET.png" class="card-img-top" alt="...">
-								<div class="card-body">
-									<h5 class="card-title">C# .NET</h5>
-									<p class="card-text">C# furthered my understanding of Object Oriented Programming. I learned the power of MVC and how to use it with ADO.NET and Microsoft's Entity Framework for web development.</p>
-								</div>
+								<div class="card"></div>
+								<div class="card"></div>
+								<div class="card"></div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- End Jumbotron Portfolio -->
+				<br>
+				<br>
+				<!-- Jumbotron Skills -->
+				<div>
+					<div id="background3">
+						<div id="skills" class="jumbotron jumbotron-fluid bg-black mt-5 p-5">
+							<h1 class="row">Skills</h1>
+							<div class="card-group">
+								<div class="card">
+									<img src="./img/html-css2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">HTML & CSS</h5>
+										<p class="card-text">I have experienced using HTML and CSS features, as well as frameworks like Bootstrap to stylize websites. I appreciative the art of design used on the front-end.</p>
+									</div>
+								</div>
+								<div class="card">
+									<img src="./img/js.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">JavaScript</h5>
+										<p class="card-text">The more I work with JavaScript and jQuery, the more I see that it's a must know language. This OOP language is powerful for adding dynamic features to static pages.</p>
+									</div>
+								</div>
+								<div class="card">
+									<img src="./img/SQL_and_Database.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">SQL</h5>
+										<p class="card-text">My experience using Microsoft TSQL taught me the importance of data collection and the power of data analyzation. I enjoyed designing a database schema and creating stored procedures.</p>
+									</div>
+								</div>
+								<div class="card">
+									<img src="./img/Python.png" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Python</h5>
+										<p class="card-text">Python has become one of my favorite languages. It was fun builting GUI's with Tkinter. As I learned more about modules and frameworks such as Django, I see why this language is so popular.</p>
+									</div>
+								</div>
+								<div class="card">
+									<img src="./img/C_Sharp_and_Dot_NET.png" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">C# .NET</h5>
+										<p class="card-text">C# furthered my understanding of Object Oriented Programming. I learned the power of MVC and how to use it with ADO.NET and Microsoft's Entity Framework for web development.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Jumbotron Skills -->
+				<br>
+				<br>
+				<!-- Footer -->
+				<div class="card text-center">
+					<div class="card-footer text-muted">&copy; Created by Courtney | 2020</div>
+				</div>
+				<!-- End Footer -->
 			</div>
-			<!-- End Jumbotron Skills -->
-			<br>
-			<br>
-			<!-- Footer -->
-			<div class="card text-center">
-				<div class="card-footer text-muted">&copy; Created by Courtney | 2020</div>
-			</div>
-			<!-- End Footer -->
-		</div>
-	  </div>
+			<!-- Contact form -->
+			<div id="Contact">
+				<button onclick="openForm()" class="pop_up_button">CONTACT</button>
+				<div class="form-popup" id="myForm">
+					<!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address - note: it will not run unless live on the internet, it will have to be pushed to your online website first -->
+					<form action="https://formspree.io/dart.courtney1@gmail.com" method="POST" class="form-container">
+						<h3>Please contact me below. I'm happy to work with you on a project!</h3>
+							<label for="fname">Name:</label><br>
+							<input type="text" id="Name" class="field" name="name" placeholder="Your name" required><br>
+							<label for="email">Email Address:</label><br>
+							<input type="text" id="Email" class="field" name="email" placeholder="Your email address"
+								required><br>
+							<label for="phone">Phone Number:</label><br>
+							<input type="text" id="Phone" class="field" name="phone" placeholder="Your phone number"><br>
+							<label for="lname">Message:</label><br>
+							<input type="text" id="Message" class="field" name="message" placeholder="Your message"><br>
 
-    <!-- Optional JavaScript -->
+							<button type="submit" class="btn">SUBMIT</button>
+							<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+					</form>
+				</div>
+			</div>
+			<!-- End Contact form -->
+		</div>
+	</div>
+
+	<!-- My JavaScript -->
+	<script src="./js/Courtney's_portfolio.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
