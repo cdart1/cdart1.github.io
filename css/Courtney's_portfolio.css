@@ -2,7 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-#background1 {
+#background1, #background3 {
 	background-image: url(../img/clouds.jpg);
 	background-position: center;
     background-repeat: no-repeat;
@@ -14,16 +14,6 @@ html {
 
 #background2 {
 	background-image: url();
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
-
-#background3 {
-	background-image: url(../img/clouds.jpg);
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +38,14 @@ html {
 	display: block;
   	margin-left: auto;
  	margin-right: auto;
+}
+
+.jumbotron {
+	background: none;
+}
+
+.skills_shade {
+	background-color: rgba(27, 27, 27, 0.795);
 }
 
 /* Contact form */
