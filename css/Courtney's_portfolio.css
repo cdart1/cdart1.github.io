@@ -37,7 +37,8 @@ html {
 }
 
 .highlight {
-	background: linear-gradient(180deg,white 50%, white 50%);
+	background-color: white;
+	border-radius: 4px;
 }
 
 /* .bg_shade {
