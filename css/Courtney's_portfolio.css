@@ -53,7 +53,7 @@ html {
 	width: 25vw;
 	background-color: white;
 	color: black;
-	border: solid;
+	border: 1px solid;
 	cursor: pointer;
 	position: fixed;
 	-webkit-animation: movePopup 1.75s;
