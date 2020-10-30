@@ -13,7 +13,7 @@ html {
 }
 
 #background2 {
-	background-image: url();
+	background-image: url(../img/clouds.jpg);
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,23 +30,19 @@ html {
 	color:  royalblue;
 }
 
-.name {
-	padding: 0px 0px 48px 0px;
-}
-
 .headshot {
 	display: block;
   	margin-left: auto;
  	margin-right: auto;
 }
 
-.jumbotron {
-	background: none;
+.highlight {
+	background: linear-gradient(180deg,white 50%, white 50%);
 }
 
-.skills_shade {
-	background-color: rgba(27, 27, 27, 0.795);
-}
+/* .bg_shade {
+	background: rgba(0, 0, 0, 0.5);
+} */
 
 /* Contact form */
 /* Button used to open the contact form - fixed at the bottom of the page */
